@@ -1,7 +1,3 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
-
 $(function () {
   //global variables
   var currentTime = dayjs().format('HH');
@@ -42,19 +38,14 @@ $(function () {
     }
   }
 
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-
   //adds user input to local storage
   function displayStorage(){
-    for(var i = 0; i < 23; i++){
+    for(var i = 0; i < 24; i++){
       //DOM Traversal to textarea, iterating through each time block
-      var boxSelect = $("hour-" + i).children('textarea');
-      console.log(boxSelect);
+      var boxSelect = $("#hour-" + i).children('textarea');
+
       //Obtains the locally stored text for that given hour
       var storedText = localStorage.getItem("savedText" + i);
-      console.log("The savedText is: " + storedText);
       
       //Sets inside box with locally stored text.
       $(boxSelect).val(storedText);
