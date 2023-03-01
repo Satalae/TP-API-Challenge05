@@ -11,4 +11,6 @@
   4. Re-open the application at your convenience to check the saved input.
 
 ## Examples
-
+![firstExample](./assets/examples/chrome_A2rKV3yKVx.png)
+![secondExample](./assets/examples/chrome_IDCQI8b6Av.png)
+![thirdExample](./assets/examples/chrome_gaZa6sEgjt.png)
